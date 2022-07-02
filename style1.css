@@ -13,9 +13,8 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  
   color: var(--yangColor);
   background-color: var(--yinColor);
   width: 100%;
