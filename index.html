@@ -119,17 +119,7 @@
    
       
    
-  <link rel="stylesheet" href="style1.css" />
-   <h1 class="ml1">
-  <span class="text-wrapper">
-    <span class="line line1"></span>
-    <span class="letters">THURSDAY</span>
-    <span class="line line2"></span>
-  </span>
-</h1>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
+  
 
      
          
@@ -224,6 +214,56 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <style type="text/css">
+       {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: none;
+      }
+      body {
+        
+        
+        align-items: center;
+        height: 1vh;
+        
+      }
+  
+      h1 {
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 2.5s steps(13) infinite alternate,
+          blink 100ms steps(13) infinite normal;
+        border-right: 0px solid black;
+      }
+      @keyframes typewriter {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink {
+        from {
+          border-color: black;
+        }
+        to {
+          border-color: transparent;
+        }
+      }
+    </style>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,7 +296,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <td align="left"> <b><center>Date</ceter></b> </td>
 <td> <b> <center>Speaker </center> </b>
 </td>
-<td> <b> <center> Title and Abstract  <p class="blink"> <TT> Click Title-Box to See Abstract </TT>  </p> </center></b>
+<td> <b> <center> Title and Abstract  <p class="blink"> <TT> <h1>Click Title-Box to See Abstract   </h1> </TT> </p> </center></b>
 </td>
 <td> <b> <center>Keywords</center> </b>
 </td>
@@ -557,12 +597,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-
-
-
-
-
 
 
 
