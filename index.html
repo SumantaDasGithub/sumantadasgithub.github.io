@@ -125,6 +125,7 @@
          
 
 
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -210,24 +211,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
-<style>
-        #blink {
-            
-            font-weight: bold;
-            color: black;
-            transition: 0.5s;
+ <style>
+        .blink {
+            animation: blinker 1.5s linear infinite;
+            color: red;
+            font-family: sans-serif;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 
 
-
-   
-    <script type="text/javascript">
-        var blink = document.getElementById('blink');
-        setInterval(function() {
-            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-        }, 1500);
-    </script>
+ 
 
 
 
@@ -242,13 +240,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <td align="left"> <b><center>Date</ceter></b> </td>
 <td> <b> <center>Speaker </center> </b>
 </td>
-<td> <b> <center>Title & Abstract  <p id="blink"> (click on title to see abstract). </p>
-    <script type="text/javascript">
-        var blink = document.getElementById('blink');
-        setInterval(function() {
-            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-        }, 1500);
-    </script> </center></b>
+<td> <b> <center> Title and Abstract  <p class="blink"> (click title box to see abstract ) </p> </center></b>
 </td>
 <td> <b> <center>Keywords</center> </b>
 </td>
@@ -549,6 +541,10 @@ window.onclick = function(event) {
     }
 }
 </script>
+
+
+
+
 
 
 
