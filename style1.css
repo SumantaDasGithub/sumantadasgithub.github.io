@@ -11,26 +11,7 @@
   --yinColor: #111111;
 }
 
-body {
-  font-family: 'Roboto Mono', monospace;
-  
-  
-  color: var(--yangColor);
-  background-color: var(--yinColor);
-  width: 100%;
-  height: 100vh;
-  overflow: hidden auto;
-}
 
-.text-wrapper {
-  display: flex;
-  font-size: 60px;
-  font-weight: 400;
-}
-
-.text-static {
-  color: #ffffff;
-}
 
 .text-dynamic {
   margin-left: 30px;
