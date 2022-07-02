@@ -123,49 +123,95 @@
          
          
          
+<!DOCTYPE html>
+<html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
 
 /* The Close Button */
 .close {
-  color: #F80101;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
 }
 </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -193,45 +239,31 @@ body {font-family: Arial, Helvetica, sans-serif;}
  <td align="left" td bgcolor="#ffffcc"><center> September 01 (9PM) </center></td>
 <td><center> hfjerhfjer</center>
 </td>
-<td> <center> <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Abstract</button>
+<td> <center> 
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal1">Vortex-type equations on compact Riemann surfaces</button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal1" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p> ∫10f(x) dx </p>
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Let $\Sigma$ be a compact Riemann surface, and $L$ be a holomorphic line bundle over it. Let $\phi \in H^{0}(\Sigma,L)$  be not identically zero and $\Sigma$ be endowed with a metric whose associated $(1,1)$-form is $\omega_{\Sigma}$. We are interested in the following family of equations (for a Hermitian metric $h_{\alpha,t}$ on $L$) that depend on the parameters $\alpha\geq 0$ and  $0\leq t \leq 1$. </p>
+  $$i\Theta_{h_{\alpha,t}}=(d-\lvert\phi\rvert_{h_{\alpha,t}}^{2})\frac{e_{\alpha}u_{\alpha}^{1-t}\omega_{\Sigma}+itk_{\alpha}\nabla^{(1,0)}\phi\wedge\nabla^{(0,1)}\phi^{*}}{a_{\alpha}+b_{\alpha}t\lvert\phi\rvert_{h_{\alpha,t}}^{2}-c_{\alpha}t^{2}\lvert\phi\rvert_{h_{\alpha,t}}^{4}},$$
+ </p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
 
-</div><script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+</div>
          </center>
 </td>
 <td><center>sdgfsdjgfgf</center></td>
@@ -242,48 +274,32 @@ window.onclick = function(event) {
 
 <tr>
 
-<td align="left" td bgcolor="#ffffcc"><center> September 01 (9PM) </center></td>
+<td align="left" td bgcolor="#ffffcc"><center> September 02 (9PM) </center></td>
 <td> 
 </td>
-<td> <center> <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Abstract</button>
+<td> <center> 
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal2">$\int\limits_0^1 f(x)\ \mathrm dx$</button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal2" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p> ∫10f(x) dx </p>
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>$\int\limits_0^1 f(x)\ \mathrm dx$</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
 
-</div><script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+</div>
          </center>
 </td>
 <td>dhsdhffherfherer</td>
@@ -298,45 +314,29 @@ window.onclick = function(event) {
 <td align="left" td bgcolor="#ffffcc"><center> September 01 (9PM) </center></td>
 <td> 
 </td>
-<td> <center> <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Abstract</button>
+<td> <center>
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal3">Open Modal</button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal3" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p> ∫10f(x) dx </p>
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
 
-</div><script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+</div>
          </center>
 </td>
 <td>dhsdhffherfherer</td>
@@ -353,46 +353,29 @@ window.onclick = function(event) {
 <td align="left" td bgcolor="#ffffcc"><center> September 01 (9PM) </center></td>
 <td><center> hfjerhfjer</center>
 </td>
-<td> <center> <!-- Trigger/Open The Modal -->
- <button id="myBtn"><center>Vortex-type equations on compact Riemann surfaces $\int\limits_0^1 f(x)\ \mathrm dx$</center> </button>
+<td> <center> 
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal4">Open Modal</button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal4" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p> Let $\Sigma$ be a compact Riemann surface, and $L$ be a holomorphic line bundle over it. Let $\phi \in H^{0}(\Sigma,L)$  be not identically zero and $\Sigma$ be endowed with a metric whose associated $(1,1)$-form is $\omega_{\Sigma}$. We are interested in the following family of equations (for a Hermitian metric $h_{\alpha,t}$ on $L$) that depend on the parameters $\alpha\geq 0$ and  $0\leq t \leq 1$. </p>
-  $$i\Theta_{h_{\alpha,t}}=(d-\lvert\phi\rvert_{h_{\alpha,t}}^{2})\frac{e_{\alpha}u_{\alpha}^{1-t}\omega_{\Sigma}+itk_{\alpha}\nabla^{(1,0)}\phi\wedge\nabla^{(0,1)}\phi^{*}}{a_{\alpha}+b_{\alpha}t\lvert\phi\rvert_{h_{\alpha,t}}^{2}-c_{\alpha}t^{2}\lvert\phi\rvert_{h_{\alpha,t}}^{4}},$$
- </div>
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
 
-</div><script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+</div>
          </center>
 </td>
 <td><center>sdgfsdjgfgf</center></td>
@@ -402,7 +385,29 @@ window.onclick = function(event) {
  <td align="left">September 22 (4PM) </td>
 <td> 
 </td>
-<td> ktgkrtgrhtgrhigrhh
+<td> 
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal5">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal5" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
 </td>
 </tr>
 
@@ -476,6 +481,55 @@ window.onclick = function(event) {
 <td> 
 </td>
 </tr>
+
+
+      
+
+
+
+
+
+<script>
+// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+</script>
+
+</body>
+</html>
+
 
 
       
