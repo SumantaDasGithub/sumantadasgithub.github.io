@@ -13,30 +13,15 @@
 
 
 
-.text-dynamic {
-  margin-left: 30px;
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
+.text-dynamic {overflow: hidden;
 }
 
 .text-item {
-  position: relative;
-  font-weight: 500;
-  color: var(--yangColor);
-  list-style: none;
-  top: 0;
+  
   animation: slide 12s steps(4) infinite;
 }
 
 .text-item::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  height: 100%;
-  width: calc(100% + 30px);
-  border-left: 3px solid var(--yangColor);
-  background-color: var(--yinColor);
   animation: typing 3s steps(10) infinite;
 }
 
