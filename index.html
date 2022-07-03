@@ -1,4 +1,4 @@
- <script type="text/x-mathjax-config">
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -51,13 +51,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                      <h1 class="mx-auto my-0 text-white">
-   <span style="--i:1">S</span>
-   <span style="--i:2">t</span>
-   <span style="--i:3">u</span>
-   <span style="--i:4">d</span>
-   <span style="--i:5">e</span>
-   <span style="--i:6">n</span>
-   <span style="--i:7">t</span> Topology & Geometry Seminars </h1>
+   Student Topology & Geometry Seminars </h1>
                      
   <a class="btn btn-primary" href="#upcoming">What's the next talk?</a>
                     </div>
@@ -129,37 +123,7 @@
 
 
  
- <style>
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  
-  
-}
-.waviy {
-  position: relative;
-}
-.waviy span {
-  position: relative;
-  display: inline-block;
  
-  
- 
-  animation: flip 2s infinite;
-  animation-delay: calc(.2s * var(--i))
-}
-@keyframes flip {
-  0%,80% {
-    transform: rotateY(360deg) 
-  }
-}
-
-</style>
 
 
 
@@ -172,219 +136,81 @@ body {
          
          
 
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-/* defaults */
-/* =============================================== */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+body {font-family: Arial, Helvetica, sans-serif;}
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  --light: hsl(0, 0%, 100%);
-  --background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));
-
-  
-
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
-
-  min-height: 100vh;
-  background: linear-gradient(to bottom, hsl(236, 50%, 98%), hsl(236, 50%, 94%));
-}
-
-a,
-a:link {
-  font-family: inherit;
-  text-decoration: none;
-}
-
-/* modal */
-/* =============================================== */
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-
-  background: hsla(0, 0%, 40%, .6);
-}
-
-/* using :target */
-.modal-container:target {
-  display: flex;
-}
-
+/* The Modal (background) */
 .modal {
-  width: 80%;
-  padding: 4rem 2rem;
-  border-radius: .8rem;
-
-  color: var(--light);
-  background: var(--background);
-  box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, 0.3);
-  position: relative;
-
-  overflow: hidden;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal__details {
-  text-align: center;
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    }
 
-  margin-bottom: 4rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid hsla(0, 0%, 100%, .4);
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
 
-.modal__title {
-  font-size: 3.2rem;
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
 
-.modal__description {
-  margin-top: 2rem;
-
-  font-size: 1.6rem;
-  font-style: italic;
+/* The Close Button */
+.close {
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.modal__text {
-  padding: 0 4rem;
-  margin-bottom: 4rem;
-
-  font-size: 1.6rem;
-  line-height: 2;
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.modal__text::before {
-  content: '';
-
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-
-  width: 18rem;
-  height: 18rem;
-  border: 1px solid hsla(0, 0%, 100%, .2);
-  border-radius: 100rem;
-
-  pointer-events: none;
+.modal-header {
+    padding: 2px 16px;
+    background-color: #000000;
+    color: white;
 }
 
-.modal__btn {
-  padding: 1rem 1.6rem;
-  border: 1px solid hsla(0, 0%, 100%, .4);
-  border-radius: 100rem;
+.modal-body {padding: 2px 16px;}
 
-  color: inherit;
-  background: transparent;
-  font-size: 1.4rem;
-  font-family: inherit;
-  letter-spacing: .2rem;
-
-  transition: .2s;
-  cursor: pointer;
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #000000;
+    color: white;
 }
-
-.modal__btn:hover,
-.modal__btn:focus {
-  border-color: hsla(0, 0%, 100%, .6);
-  transform: translateY(-.2rem);
-}
-
-/* links */
-/* =============================================== */
-
-.link-1 {
-  
-}
-
-.link-1:hover,
-.link-1:focus {
-}
-.link-2 {
-  width: 4rem;
-  height: 4rem;
-  border: 1px solid hsla(0, 0%, 100%, .4);
-  border-radius: 100rem;
-
-  color: inherit;
-  font-size: 2.2rem;
-
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: .2s;
-}
-
-.link-2::before {
-  content: '×';
-
-  transform: translateY(-.1rem);
-}
-
-.link-2:hover,
-.link-2:focus {
-  border-color: hsla(0, 0%, 100%, .6);
-  transform: translateY(-.2rem);
-}
-
-/* Second Version Link */
-/* =============================================== */
-.second-version-link,
-.second-version-link:link {
-  color: hsl(236, 50%, 50%);
-  padding: .8rem 1.6rem .8rem .2rem;
-  border-bottom: 2px solid hsl(236, 50%, 50%);
-
-  font-size: 1.4rem;
-  font-weight: bold;
-
-  position: absolute;
-  top: 4rem;
-  right: 4rem;
-}
-
-.second-version-link::after {
-  content: '\2197';
-
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  font-size: .9em;
-}
-
-.abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 0%, .6);
-  font-size: 1.6rem;
-}
-
-
-
 </style>
 </head>
 <body>
@@ -476,7 +302,7 @@ a:link {
 <td align="left"> <b><center>Date</ceter></b> </td>
 <td> <b> <center>Speaker </center> </b>
 </td>
-<td> <b> <center> Title and Abstract  <p class="blink"> <TT> <h5>Click On Title To See Abstract   </h5> </TT> </p> </center></b>
+<td> <b> <center> Title and Abstract  <p class="blink"> <TT> <h5>Click Title-Box to See Abstract   </h5> </TT> </p> </center></b>
 </td>
 <td> <b> <center>Keywords</center> </b>
 </td>
@@ -487,32 +313,34 @@ a:link {
 
 
 
- <td align="left" td bgcolor="#ffffcc"><center> September 01  </center></td>
-<td><center>Kartick Ghosh</center>
+ <td align="left" td bgcolor="#ffffcc"><center> September 01 (9PM) </center></td>
+<td><center> hfjerhfjer</center>
 </td>
 <td> <center> 
-<a href="#modal-opened1" class="link-1" id="modal-closed">Vortex-type equations on compact Riemann surfaces</a>
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal1">Vortex-type equations on compact Riemann surfaces</button>
 
-<div class="modal-container" id="modal-opened1">
-  <div class="modal">
+<!-- The Modal -->
+<div id="myModal1" class="modal">
 
-    <div class="modal__details">
-      <h1 class="modal__title">Modal Title</h1>
-      <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
     </div>
-
-    <p class="modal__text">Let $\Sigma$ be a compact Riemann surface, and $L$ be a holomorphic line bundle over it. Let $\phi \in H^{0}(\Sigma,L)$  be not identically zero and $\Sigma$ be endowed with a metric whose associated $(1,1)$-form is $\omega_{\Sigma}$. We are interested in the following family of equations (for a Hermitian metric $h_{\alpha,t}$ on $L$) that depend on the parameters $\alpha\geq 0$ and  $0\leq t \leq 1$. </p>
+    <div class="modal-body">
+      <p>Let $\Sigma$ be a compact Riemann surface, and $L$ be a holomorphic line bundle over it. Let $\phi \in H^{0}(\Sigma,L)$  be not identically zero and $\Sigma$ be endowed with a metric whose associated $(1,1)$-form is $\omega_{\Sigma}$. We are interested in the following family of equations (for a Hermitian metric $h_{\alpha,t}$ on $L$) that depend on the parameters $\alpha\geq 0$ and  $0\leq t \leq 1$. </p>
   $$i\Theta_{h_{\alpha,t}}=(d-\lvert\phi\rvert_{h_{\alpha,t}}^{2})\frac{e_{\alpha}u_{\alpha}^{1-t}\omega_{\Sigma}+itk_{\alpha}\nabla^{(1,0)}\phi\wedge\nabla^{(0,1)}\phi^{*}}{a_{\alpha}+b_{\alpha}t\lvert\phi\rvert_{h_{\alpha,t}}^{2}-c_{\alpha}t^{2}\lvert\phi\rvert_{h_{\alpha,t}}^{4}},$$
  </p>
-
-    <button class="modal__btn">Date 12the September </button>
-
-    <a href="#modal-closed" class="link-2"></a>
-
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
+
 </div>
-
-
          </center>
 </td>
 <td><center>sdgfsdjgfgf</center></td>
@@ -523,31 +351,32 @@ a:link {
 
 <tr>
 
-<td align="left" td bgcolor="#ffffcc"><center> September 02 </center></td>
-<td> <center> Gobinda Sau </center>
+<td align="left" td bgcolor="#ffffcc"><center> September 02 (9PM) </center></td>
+<td> 
 </td>
 <td> <center> 
-<a href="#modal-opened2" class="link-1" id="modal-closed">Let's Calcultae $\int\limits_0^1 f(x)\ \mathrm dx$</a>
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal2">hsdghsftryr$\int\limits_0^1 f(x)\ \mathrm dx$</button>
 
-<div class="modal-container" id="modal-opened2">
-  <div class="modal">
+<!-- The Modal -->
+<div id="myModal2" class="modal">
 
-    <div class="modal__details">
-      <h1 class="modal__title">Modal Title</h1>
-      <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
     </div>
-
-    <p class="modal__text">In mathematics, an integral assigns numbers to functions in a way that describes displacement, area, volume, and other concepts that arise by combining infinitesimal data. The process of finding integrals is called integration. Along with differentiation, integration is a fundamental, essential operation of calculus,[a] and serves as a tool to solve problems in mathematics and physics involving the area of an arbitrary shape, the length of a curve, and the volume of a solid, among others.
-
-</p>
-
-    <button class="modal__btn">Button &rarr;</button>
-
-    <a href="#modal-closed" class="link-2"></a>
-
+    <div class="modal-body">
+      <p>hfherhterht$\int\limits_0^1 f(x)\ \mathrm dx$</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
-</div>
 
+</div>
          </center>
 </td>
 <td>dhsdhffherfherer</td>
@@ -559,29 +388,33 @@ a:link {
 
  <tr>
 
-<td align="left" td bgcolor="#ffffcc"><center> September 03  </center></td>
-<td> <center>Sumanta Das</center>
+<td align="left" td bgcolor="#ffffcc"><center> September 01 (9PM) </center></td>
+<td> 
 </td>
 <td> <center>
-<a href="#modal-opened3" class="link-1" id="modal-closed">Refinement of Kneser-Milnor prime decomposition theorem after Perelman</a>
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal3">grtgrt$\lim_{n\to\infty}x_n=\pm \infty$</button>
 
-<div class="modal-container" id="modal-opened3">
-  <div class="modal">
+<!-- The Modal -->
+<div id="myModal3" class="modal">
 
-    <div class="modal__details">
-      <h1 class="modal__title">Modal Title</h1>
-      <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
     </div>
-
-    <p class="modal__text">Kneser-Milnor prime decomposition theorem says that any closed orientable 3-manifold can be written uniquely as a finite connected sum of orientable prime 3-manifolds. After Perelman’s positive answer to the $3$-dimensional Poincaré conjecture, we have some extra pieces of information about these summands, namely, some of these summands have contractible universal covers, and $\Bbb S^3$ cover some others, and the rest are homeomorphic to $\Bbb S^2\times \Bbb S^1$. </p>
-
-    <button class="modal__btn">Button &rarr;</button>
-
-    <a href="#modal-closed" class="link-2"></a>
-
+    <div class="modal-body">
+      <p>grtgrt$\lim_{n\to\infty}x_n=\pm \infty$</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
+
 </div>
- </center>
+         </center>
 </td>
 <td>dhsdhffherfherer</td>
 </tr>
@@ -598,25 +431,28 @@ a:link {
 <td><center> hfjerhfjer</center>
 </td>
 <td> <center> 
-<a href="#modal-opened" class="link-1" id="modal-closed">Vortex-type equations on compact Riemann surfaces</a>
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal4">Open Modal</button>
 
-<div class="modal-container" id="modal-opened">
-  <div class="modal">
+<!-- The Modal -->
+<div id="myModal4" class="modal">
 
-    <div class="modal__details">
-      <h1 class="modal__title">Modal Title</h1>
-      <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
     </div>
-
-    <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
-
-    <button class="modal__btn">Button &rarr;</button>
-
-    <a href="#modal-closed" class="link-2"></a>
-
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
-</div>
 
+</div>
          </center>
 </td>
 <td><center>sdgfsdjgfgf</center></td>
@@ -627,27 +463,28 @@ a:link {
 <td> 
 </td>
 <td> 
-<center> 
-<a href="#modal-opened" class="link-1" id="modal-closed">Vortex-type equations on compact Riemann surfaces</a>
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal5">Open Modal</button>
 
-<div class="modal-container" id="modal-opened">
-  <div class="modal">
+<!-- The Modal -->
+<div id="myModal5" class="modal">
 
-    <div class="modal__details">
-      <h1 class="modal__title">Modal Title</h1>
-      <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
     </div>
-
-    <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
-
-    <button class="modal__btn">Button &rarr;</button>
-
-    <a href="#modal-closed" class="link-2"></a>
-
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
-</div>
 
-         </center>
+</div>
 </td>
 </tr>
 
