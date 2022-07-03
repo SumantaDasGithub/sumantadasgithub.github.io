@@ -50,7 +50,16 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                     <h1 class="mx-auto my-0 text-white">Student Topology & Geometry Seminars</h1>
+                     <h1 class="mx-auto my-0 text-white"><div class="waviy">
+   <span style="--i:1">S</span>
+   <span style="--i:2">T</span>
+   <span style="--i:3">U</span>
+   <span style="--i:4">D</span>
+   <span style="--i:5">E</span>
+   <span style="--i:6">N</span>
+   <span style="--i:7">T</span>
+   
+  </div> Topology & Geometry Seminars</h1>
                         
                         <a class="btn btn-primary" href="#upcoming">What's the next talk?</a>
                     </div>
@@ -117,7 +126,44 @@
          
      
    
-      
+ 
+
+
+ 
+
+
+
+<style>
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+ 
+  
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+</style>
    
          
          
