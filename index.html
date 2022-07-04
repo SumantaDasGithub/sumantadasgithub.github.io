@@ -1,3 +1,16 @@
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,17 +33,18 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top">Indian Institute of Sciene, Bangalore</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Upcoming Talk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Old Talks Archive</a></li>
+                        
+						<li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -39,183 +53,613 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div class="masthead-subheading">Student</div>
+                <div class="masthead-heading text-uppercase">Topology & Geometry Seminar</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">What's The Next Talk?</a>
             </div>
         </header>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading ">Let's calculate $\int\limits_0^1f(x)\ \mathrm dx$</h2>
+                    <h4 class="section-subheading text-muted">Gobinda Sau</h4>
+					<h3 class="section-subheading text-muted">$31^\textbf{st}\text{ Dec, }2022$ </h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-">
                         <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/IISc.jpg" alt="..." /></div>
                         </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+						<br><br/>
+                        <h4 class="my-3">Abstract</h4>
+                        <p class="text-muted">In mathematics, an integral assigns numbers to functions in a way that describes displacement, area, volume, and other concepts that arise by combining infinitesimal data. The process of finding integrals is called integration. Along with differentiation, integration is a fundamental, essential operation of calculus,[a] and serves as a tool to solve problems in mathematics and physics involving the area of an arbitrary shape, the length of a curve, and the volume of a solid, among others.
+
+The integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane that is bounded by the graph of a given function between two points in the real line. Conventionally, areas above the horizontal axis of the plane are positive while areas below are negative. Integrals also refer to the concept of an antiderivative, a function whose derivative is the given function. In this case, they are called indefinite integrals. The fundamental theorem of calculus relates definite integrals with differentiation and provides a method to compute the definite integral of a function when its antiderivative is known.
+\begin{eqnarray*}
+I_n 
+&=&  \sum_{k=0}^\infty \int_0^\infty \frac{(-se^{-s})^k}{k!} \frac{s^{n-1}e^{-s}}{(n-1)!}\ \mathrm ds \\
+&=& \sum_{k=0}^\infty \frac{(-1)^k}{k!(n-1)!} \int_0^\infty s^{k+n-1}e^{-(k+1)s}\ \mathrm ds \\
+&=& \sum_{k=0}^\infty \frac{(-1)^k}{k!(n-1)!} \frac{(k+n-1)!}{(k+1)^{k+n}}.\end{eqnarray*}
+
+
+Although methods of calculating areas and volumes dated from ancient Greek mathematics, the principles of integration were formulated independently by Isaac Newton and Gottfried Wilhelm Leibniz in the late 17th century, who thought of the area under a curve as an infinite sum of rectangles of infinitesimal width. Bernhard Riemann later gave a rigorous definition of integrals, which is based on a limiting procedure that approximates the area of a curvilinear region by breaking the region into infinitesimally thin vertical slabs. In the early 20th century, Henri Lebesgue generalized Riemann's formulation by introducing what is now referred to as the Lebesgue integral; it is more robust than Riemann's in the sense that a wider class of functions are Lebesgue-integrable.</p>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+                    
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
+		
+		
+        <!-- Recent Talks Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Old Talks Archive</h2>
+                    <h3 class="section-subheading text-muted">From 17th January, 2022 </h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<link rel="stylesheet" type="text/css" href="style.css" />
+    <style type="text/css">
+       {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: none;
+      }
+      body {
+        
+        
+        align-items: center;
+        height: 1vh;
+        
+      }
+  
+      h5 {
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 10s steps(13) infinite alternate,
+          blink 100ms steps(13) infinite normal;
+        border-right: 2px solid black;
+      }
+      @keyframes typewriter {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 40.2%;
+        }
+      }
+      @keyframes blink {
+        from {
+          border-color: black;
+        }
+        to {
+          border-color: transparent;
+        }
+      }
+    </style>
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<center>
+
+<h1></h1>
+
+<p>
+<p class="blink"> <TT> <h5>Click on title to see details and scroll down to load more</h5></TT> </p>
+</p>
+
+<h2></h2>
+<div role="region" aria-labelledby="HeadersRow" tabindex="0" class="colheaders">
+  <table>
+    <caption id="HeadersRow">STGS Old Talks Archive</caption>
+    <thead>
+      <tr><th><center>No.</center></th>
+        <th><center>Title   </center></th>
+        <th><center>Speaker</center></th>
+        <th><center>Date & Time</center></th>
+        <th><center>Keywords</center></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><center>30.</center></td>
+        <td><a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5" style="text-decoration: none"; style="text-decoration color: black"; >
+                                
+                                <center><p style="nounderline">Let's calculate $\int_0^1f(x)\ \mathrm dx$Integration, Derivations, Sum, Series</p></center>
+                            </a> </td>
+        <td><center>Gobinda Sau</center></td>
+        <td><center>31st Dec, 2022, 12:00-1:30 am</center></td>
+        <td><center>Integration, Derivations, Sum, Series</center></td>
+      </tr>
+      <tr><td><center>29.</center></td>
+        <td>    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6" style="text-decoration: none"; style="text-decoration color: black"; >
+                                
+                                <center><p style="nounderline">Lectures On K-stability</p></center>
+                            </a> 
+							
+							
+							</td>
+        <td><center>Karthick Ghosh</center></td>
+        <td><center>04th July 2022 (Monday), 09:00 P.M. - 10:30 P.M</center></td>
+        <td><center>Moment map, (symplectic/algebraic) quotient construction, Geometric invariant theory, stable/semi-stable points, Hilbert-Mumford criterion.</center></td>
+      </tr>
+      <tr><td></td>
+        <td>Sir Isaac Newton</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+      </tr>
+      <tr><td></td>
+        <td>Mary Shelley</td>
+        <td>Frankenstein; or, The Modern Prometheus</td>
+        <td>1818</td>
+        <td>9781530278442</td>
+      </tr>
+      <tr><td></td>
+        <td>Herman Melville</td>
+        <td>Moby-Dick; or, The Whale</td>
+        <td>1851</td>
+        <td>9781530697908</td>
+      </tr>
+      <tr><td></td>
+        <td>Emma Dorothy Eliza Nevitte Southworth</td>
+        <td>The Hidden Hand</td>
+        <td>1888</td>
+        <td>9780813512969</td>
+      </tr>
+      <tr><td></td>
+        <td>F. Scott Fitzgerald</td>
+        <td>The Great Gatsby</td>
+        <td>1925</td>
+        <td>9780743273565</td>
+      </tr>
+      <tr><td></td>
+        <td>George Orwell</td>
+        <td>Nineteen Eighty-Four</td>
+        <td>1948</td>
+        <td>9780451524935</td>
+      </tr>
+      <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Nnedi Okorafor</td>
+        <td>Who Fears Death</td>
+        <td>2010</td>
+        <td>9780756406691</td>
+      </tr>
+	  <tr><td></td>
+        <td>Sir Isaac Newton</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+      </tr>
+	  <tr><td></td>
+        <td>Sir Isaac Newton</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+        <td>The Method of Fluxions and Infinite Series: With Its Application to the Geometry of Curve-lines</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</center>
+
+
+
+
+
+
+<style>
+body {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fff;
+  
+}
+
+/* Standard Tables */
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  
+}
+
+caption {
+  text-align: left;
+  font-style: italic;
+  padding: 0.25em 0.5em 0.5em 0.5em;
+}
+
+th,
+td {
+  padding: 0.25em 0.5em 0.25em 1em;
+  vertical-align: text-top;
+  text-align: left;
+  text-indent: -0.5em;
+  scroll-snap-align: start;
+}
+
+th {
+  vertical-align: bottom;
+  background-color: #666;
+  color: #fff;
+}
+
+tr:nth-child(even) th[scope=row] {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) th[scope=row] {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #000;
+  color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #000;
+  color: #fff;
+}
+
+td:nth-of-type(2) {
+  font-style: italic;
+}
+
+th:nth-of-type(3),
+td:nth-of-type(3) {
+  text-align: right;
+}
+
+/* Fixed Headers */
+
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+th[scope=row] {
+  vertical-align: top;
+  color: inherit;
+  background-color: inherit;
+  background: linear-gradient(90deg, transparent 0%, transparent calc(100% - .05em), #d6d6d6 calc(100% - .05em), #d6d6d6 100%);
+}
+
+th:not([scope=row]):first-child {
+  left: 0;
+  z-index: 3;
+  background: linear-gradient(90deg, #666 0%, #666 calc(100% - .05em), #ccc calc(100% - .05em), #ccc 100%);
+}
+
+/* Scrolling wrapper */
+
+div[tabindex="0"][aria-labelledby][role="region"] {
+  overflow: auto;
+  scroll-snap-type: both mandatory;
+  max-width: 80em;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"]:focus {
+  box-shadow: 0 0 .5em rgba(0,0,0,.5);
+  outline: .1em solid rgba(0,0,0,.1);
+}
+
+div[tabindex="0"][aria-labelledby][role="region"] table {
+  margin: 0;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"].rowheaders {
+  
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 4em 100%, 4em 100%, 1.4em 100%, 1.4em 100%;
+  background-position: 0 0, 100%, 0 0, 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"].colheaders {
+  
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: 100% 4em, 100% 4em, 100% 1.4em, 100% 1.4em;
+  background-attachment: local, local, scroll, scroll;
+}
+
+/* Strictly for making the scrolling happen. */
+
+th[scope=row] {
+  min-width: 40vw;
+}
+
+@media all and (min-width: 30em) {
+  th[scope=row] {
+    min-width: 20em;
+  }
+}
+  
+th[scope=row] + td {
+  min-width: 24em;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"]:nth-child(4) {
+  max-height: 14em;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"]:nth-child(8) {
+  max-height: 14em;
+  margin: 0 1em;
+}
+</style>
+
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+                    
         </section>
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">About STSG</h2>
+                    <h3 class="section-subheading text-muted">IISc Bangalore</h3>
                 </div>
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
+                                <h3>17th January, 2022</h3>
                                 <h4 class="subheading">Our Humble Beginnings</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">The first meeting of the seminar is tomorrow i.e.,17-01-2022 at 3:30 PM in LH-1. The details of the talk are given below: </br>
+
+ 
+
+Module: Analysis
+
+ 
+
+Speaker: Rajas Sandeep Sompurkar (PhD)
+
+Date: 17th January, 2022 (Monday)
+
+Time: 03:30 P.M. - 05:00 P.M
+
+Abstract: The speaker will cover the basic facts about Hermitian and Kähler manifolds. Some basic facts about complex manifolds will be assumed.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h3>Plan</h3>
+                                <h4 class="subheading">We plan to meet twice a week, once for each module.</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">The meetings will happen offline on Mondays and Fridays in the afternoon (2-5 PM). The exact time would be intimated at least a day in advance.</p></div>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                                <h4>efwekrfhewhrfe</h4>
+                                <h4 class="subheading">werweghrrfe</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">tgrtyrtytrytry</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -223,88 +667,17 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+                                <h4 class="subheading">grtrttrtrtrt</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">ergrtgrtgrtgrtgrt</p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
+                    
                 </ul>
             </div>
         </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+       
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -373,11 +746,9 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Our Website 2022</div>
+                    <div class="col-lg-4 my- my-lg-0">
+                        
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
@@ -537,18 +908,28 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Let's calculate $\int\limits_0^1f(x)\ \mathrm dx$</h2>
+                                    <p class="item-intro text-muted">Gobinda Sau</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
+                                    <p>In mathematics, an integral assigns numbers to functions in a way that describes displacement, area, volume, and other concepts that arise by combining infinitesimal data. The process of finding integrals is called integration. Along with differentiation, integration is a fundamental, essential operation of calculus,[a] and serves as a tool to solve problems in mathematics and physics involving the area of an arbitrary shape, the length of a curve, and the volume of a solid, among others.
+
+The integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane that is bounded by the graph of a given function between two points in the real line. Conventionally, areas above the horizontal axis of the plane are positive while areas below are negative. Integrals also refer to the concept of an antiderivative, a function whose derivative is the given function. In this case, they are called indefinite integrals. The fundamental theorem of calculus relates definite integrals with differentiation and provides a method to compute the definite integral of a function when its antiderivative is known.
+\begin{eqnarray*}
+I_n 
+&=&  \sum_{k=0}^\infty \int_0^\infty \frac{(-se^{-s})^k}{k!} \frac{s^{n-1}e^{-s}}{(n-1)!}\ \mathrm ds \\
+&=& \sum_{k=0}^\infty \frac{(-1)^k}{k!(n-1)!} \int_0^\infty s^{k+n-1}e^{-(k+1)s}\ \mathrm ds \\
+&=& \sum_{k=0}^\infty \frac{(-1)^k}{k!(n-1)!} \frac{(k+n-1)!}{(k+1)^{k+n}}.\end{eqnarray*}
+
+
+Although methods of calculating areas and volumes dated from ancient Greek mathematics, the principles of integration were formulated independently by Isaac Newton and Gottfried Wilhelm Leibniz in the late 17th century, who thought of the area under a curve as an infinite sum of rectangles of infinitesimal width. Bernhard Riemann later gave a rigorous definition of integrals, which is based on a limiting procedure that approximates the area of a curvilinear region by breaking the region into infinitesimally thin vertical slabs. In the early 20th century, Henri Lebesgue generalized Riemann's formulation by introducing what is now referred to as the Lebesgue integral; it is more robust than Riemann's in the sense that a wider class of functions are Lebesgue-integrable.</p>
+                    <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Southwest
+                                            <strong>Keywords:</strong>
+                                           Integration, Derivations, Sum, Series
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Website Design
+                                            <strong>Prerequisite:</strong>
+                                           Analysis on manifolds
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -572,18 +953,18 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Lectures On K-stability</h2>
+                                    <p class="item-intro text-muted">Karthick Ghosh</p>
+                                    
+                                    <p>In today's lecture, we will try to motivate the notion of K-stability, as an analogous condition to the Hilbert- Mumford criterion in geometric invariant theory. While motivating this, we will describe how the scalar curvature of a Kahler metric arises as a moment map for an infinite-dimensional Hamiltonian action.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Window
+                                            <strong>Keywords:</strong>
+                                            Moment map, (symplectic/algebraic) quotient construction, Geometric invariant theory, stable/semi-stable points, Hilbert-Mumford criterion.
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Photography
+                                            <strong>Note:</strong>
+                                            Although the Kempf-Ness theorem is the main theorem relating all these notions(basically it relates the quotient constructions in symplectic and algebraic geometry), we won't talk about it because our aim is K-stability. We might talk about it later!!!
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
