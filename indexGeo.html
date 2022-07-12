@@ -1,0 +1,1673 @@
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!----For sticky header, body of homepage, scrollbar---->
+
+
+
+<style>
+
+@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+
+
+body {
+font-size: 20px;
+margin-top:110px;
+
+ background: #222;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+  top: 0;
+  left: 0;
+  position: center;
+  height: 100%;
+  
+  padding: 70px 30px 70px 30px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  
+  font-family: 'Prompt', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ul {
+  margin: 10px 0 10px 30px;
+}
+li, p {
+  margin: 0 0 10px 0;
+}
+h1 {
+  margin: 0 0 20px 0;
+}
+
+
+
+
+.header {
+  background: #222;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+
+
+  position: absolute;
+  top: 0;
+  right: 0px;
+  left: 0;
+ height: 20px;
+  width: 100%;
+  
+  padding: 20px 10px 70px 10px;
+}
+
+
+.content {
+  padding: 36px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 20px;
+  
+  
+ display:none;
+  
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+   
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+
+  
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+  
+  
+}
+
+
+</style>
+
+<!----For sticky header, body of homepage, scrollbar---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----Animation of homepage name---->
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h11 {
+
+  
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+ 
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+body {
+  
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+</style>
+
+<!----Animation of homepage name---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--- to give position homepage button--->
+
+
+<style>
+.container {
+  position: relative;
+}
+
+.topright {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  font-size: 55px;
+  color: white;
+  font-family: 'Brush Script MT', cursive, monospace;
+  
+}
+
+</style>
+
+<!--- to give position homepage button--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---homepage button animation--->
+
+<style>
+a.button1 {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+border: 2px solid white;
+  right: 20px;
+  font-family: 'Prompt', sans-serif;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 120%;
+  font-size: 22px;
+  box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  
+    
+}
+
+
+.button1 {
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+}
+
+.button1:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+</style>
+
+<!---homepage button animation--->
+
+
+
+
+
+
+
+
+<!--- Frames for details of talks--->
+ <style>
+    .frame {
+    overflow-y: auto;
+    border: 5px solid white;
+    height:17.5em;
+    width: 80%;
+    line-height: 2em;
+    padding: 20px;
+    border-radius: 20px;
+    
+    transform: translate(0%, 0%);
+}
+
+.frame::-webkit-scrollbar {
+   color: white; 
+}
+
+.frame::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.frame::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: black;
+}
+
+
+
+.frame1 {
+    overflow-y: auto;
+    
+    height: 3em;
+    width: 90%;
+   
+    padding: 0px;
+    
+    transform: translate(5%, 5%);
+}
+</style>
+<!--- Frames for details of talks--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="header" id="myHeader">
+
+         
+         <h1 style="position: absolute;
+               left: 72px;"> 
+               
+               <h11>
+                  STGS Geometry Module
+               </h11>
+               
+          </h1> 
+  
+  
+         <div class="topright">
+  
+                <a href="https://sumantadasgithub.github.io/"                      class="button1">Homepage</a>
+           
+         </div>
+  
+  
+  
+</div>
+
+
+<!---Starting of the content section--->
+
+
+
+<div class="content">
+             
+             
+             
+    
+       
+
+    
+          
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+<center>
+
+<h1><h1 style="color:white; ">June, 2022</h1></h1>
+
+<p>
+</p>
+</p>
+
+<h2></h2>
+<div role="region" aria-labelledby="HeadersRow" tabindex="0" class="colheaders">
+  <table>
+    
+
+      
+    <tbody>
+      <tr>
+        <th>Title   </th>
+        <th>Speaker</th>
+        <th>Date & Time</th>
+        <th>Keywords</th>
+      </tr>
+    
+      
+     
+    <tr> 
+        <td><a class="button" href="#modal8"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+          Title of talk 8
+      </a>
+
+
+
+<div class="popup" id="modal8">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: Lorem ipsum dolor sit amet,                   consectetur adipisicing elit. Repudiandae expedita corrupti                       laudantium aperiam, doloremque explicabo ipsum earum dicta saepe                 delectus totam vitae ipsam doloribus et obcaecati facilis eius                   assumenda, cumque.
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.                         Repudiandae expedita corrupti laudantium aperiam, doloremque                     explicabo ipsum earum dicta saepe delectus totam vitae ipsam                     doloribus et obcaecati facilis eius assumenda, cumque.</center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: Gobinda Sau</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: Lorem ipsum dolor sit amet, consectetur                            adipisicing elit. Repudiandae expedita corrupti laudantium                        aperiam, doloremque explicabo ipsum earum dicta saepe                            delectus totam vitae ipsam doloribus et obcaecati facilis                        eius assumenda, cumque.</p><br />
+                     
+                     <p >Lorem ipsum dolor sit amet, consectetur adipisicing                          elit. Repudiandae expedita corrupti laudantium aperiam,                          doloremque explicabo ipsum earum dicta saepe delectus totam                      vitae ipsam doloribus et obcaecati facilis eius assumenda,                        cumque.</p><br  />
+                     
+                     <p >Lorem ipsum dolor sit amet, consectetur adipisicing                          elit. Repudiandae expedita corrupti laudantium aperiam,                          doloremque explicabo ipsum earum dicta saepe delectus totam                      vitae ipsam doloribus et obcaecati facilis eius assumenda,                        cumque.</p><br />
+                     
+                     <p >Lorem ipsum dolor sit amet, consectetur adipisicing                          elit. Repudiandae expedita corrupti laudantium aperiam,                          doloremque explicabo ipsum earum dicta saepe delectus totam                      vitae ipsam doloribus et obcaecati facilis eius assumenda,                        cumque.</p>
+    
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div></td>
+        <td> Gobinda Sau</td>
+        <td>10th, 12:00 am</td>
+        <td>--</td>
+      </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>
+        
+        
+        
+        
+                   <a class="button" href="#modal7"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+          Talk 7
+      </a>
+
+
+
+<div class="popup" id="modal7">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: Write something
+                <br />
+                Write something</center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: Write something</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: Write something</p><br />
+                     
+                     <p >Write something</p><br  />
+                     
+                     <p >Write something</p><br />
+                     
+                     <p >Write something</p>
+    
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div>
+        
+        
+        
+        
+        </td>
+        <td>Someone Else</td>
+        <td>TBD</td>
+        <td>Nil</td>
+      </tr>
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <tr>
+        <td>
+        
+        
+        
+        
+                   <a class="button" href="#modal6"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+          Vortex-type equations on compact Riemann surfaces
+      </a>
+
+
+
+<div class="popup" id="modal6">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: Vortex-type equations on compact Riemann surfaces
+                </center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: Kartick Ghosh</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: Let $\Sigma$ be a compact Riemann surface, and $L$ be a holomorphic line bundle over it. Let $\phi \in H^{0}(\Sigma,L)$  be not identically zero and $\Sigma$ be endowed with a metric whose associated $(1,1)$-form is $\omega_{\Sigma}$. We are interested in the following family of equations (for a Hermitian metric $h_{\alpha,t}$ on $L$) that depend on the parameters $\alpha\geq 0$ and  $0\leq t \leq 1$.
+	$$
+	\label{1}	
+	i\Theta_{h_{\alpha,t}}=(d-\lvert\phi\rvert_{h_{\alpha,t}}^{2})\frac{e_{\alpha}u_{\alpha}^{1-t}\omega_{\Sigma}+itk_{\alpha}\nabla^{(1,0)}\phi\wedge\nabla^{(0,1)}\phi^{*}}{a_{\alpha}+b_{\alpha}t\lvert\phi\rvert_{h_{\alpha,t}}^{2}-c_{\alpha}t^{2}\lvert\phi\rvert_{h_{\alpha,t}}^{4}},
+	$$
+	where $d>0,a_{\alpha}>0,e_{\alpha}>0,b_{\alpha},c_{\alpha},k_{\alpha}\geq 0$ are constants, $u_{\alpha}=\frac{a_{\alpha}i\Theta_{h_{\alpha,t=0}}}{e_{\alpha}(d-\lvert\phi\rvert_{h_{\alpha,t=0}}^{2})\omega_{\Sigma}}>0$ is a function, and $\Theta_{h_{\alpha,t}}$ is the curvature of the metric $h_{\alpha,t}.$ We choose a path in the $\alpha$-$t$ plane (lying in the region $\alpha\geq 0, 0< t\leq 1$) which starts at $(\alpha_{0},t_{0})$ and ends at $(\alpha_{1}, t_{1})$.% with $i\Theta_{\alpha_{0},t_{0}}=\omega_{\Sigma}$. 
+	
+	
+	Suppose $h_{\alpha,t}=h_{\alpha,t=0}e^{-\psi_{\alpha,t}}$ solves the above equation. The following theorem proves $C^{2,\beta}$ \textit{a priori} estimate on $\psi_{\alpha,t}$.  From now onwards, we suppress the dependence of $a_{\alpha},b_{\alpha},c_{\alpha},e_{\alpha},k_{\alpha}$ on $\alpha$.
+	</p>
+    
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div>
+        
+        
+        
+        
+        </td>
+        <td>Someone Else</td>
+        <td>Never</td>
+        <td>??</td>
+      </tr>
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <tr>
+        <td>
+        
+        
+        
+        
+                   <a class="button" href="#modal5"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+          Talk 5
+      </a>
+
+
+
+<div class="popup" id="modal5">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: Topic Unknown 
+                <br />
+               
+               </center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: Random guy from our department</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: What are you looking for?</p><br />
+                     
+                     <p >Write something else</p><br  />
+                     
+                     <p >Write something</p><br />
+                     
+                     <p >Write something else</p>
+    
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div>
+        
+        
+        
+        
+        </td>
+        <td>A random guy from our department</td>
+        <td>At the end of this year</td>
+        <td>123</td>
+      </tr>
+      
+      
+   
+    
+      
+      
+      
+      
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </tbody>
+  </table>
+</div>
+
+
+
+</center>
+
+  
+ 
+  
+  
+  
+
+
+
+
+<br/><br/>
+
+
+
+
+
+
+    
+       
+
+
+
+
+
+
+
+
+<center>
+
+<h1> <h1 style="color:white; ">May, 2022</h1></h1>
+
+<p>
+</p>
+</p>
+
+<h2></h2>
+<div role="region" aria-labelledby="HeadersRow" tabindex="0" class="colheaders">
+  <table class="fixed">
+    
+
+      
+    <tbody>
+      <tr>
+        <th>Title   </th>
+        <th>Speaker</th>
+        <th>Date & Time</th>
+        <th>Keywords</th>
+      </tr>
+    
+      
+     
+    <tr>
+        <td><a class="button" href="#modal4"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+           007
+      </a>
+
+
+
+<div class="popup" id="modal4">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: Zero Zero Seven</center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: James Bond</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: Kill Him</p><br />
+                     
+                     <p >Kill Him.</p><br  />
+                     
+                     <p >Kill Him.</p><br />
+                     
+                     <p >Don't Kill Him.</p>
+    
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div></td>
+        <td> James Bond</td>
+        <td>Speaker is busy</td>
+        <td>Call Him</td>
+      </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>
+        
+        
+        
+        
+                   <a class="button" href="#modal3"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+          Title of the talk 3
+      </a>
+
+
+
+<div class="popup" id="modal3">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: Write something
+                <br />
+                gfdjgg</center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: Someone</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: Write something</p><br />
+                     
+                     <p >Nonsense</p><br  />
+                     
+                     <p >Write something</p><br />
+                     
+                     <p >Write something</p>
+    
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div>
+        
+        
+        
+        
+        </td>
+        <td>Someone Else</td>
+        <td>TBD</td>
+        <td>Nil</td>
+      </tr>
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <tr>
+        <td>
+        
+        
+        
+        
+                   <a class="button" href="#modal2"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+          Title of the talk 2
+      </a>
+
+
+
+<div class="popup" id="modal2">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: Write something else
+                <br />
+                Write something else</center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: Write something else</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: Write something else</p><br />
+                     
+                     <p >Write something else</p><br  />
+                     
+                     <p >Write something</p><br />
+                     
+                     <p >Write something else</p>
+    
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div>
+        
+        
+        
+        
+        </td>
+        <td>Someone Else</td>
+        <td>Never</td>
+        <td>??</td>
+      </tr>
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <tr>
+        <td>
+        
+        
+        
+        
+                   <a class="button" href="#modal1"  onclick='return disableScrolling()'            onMouseOver="this.style.color='yellow'"
+     onMouseOut="this.style.color='#00d7c3'">
+   
+          The Mabuchi functional: $\mathcal{M}(\varphi) =$$ \int_0^1 \int_M \dot \varphi_t (\hat S - S_{\varphi_t}) \omega_{\varphi_t}^n dt$
+      </a>
+
+
+
+<div class="popup" id="modal1">
+
+
+
+       <a class="popup__overlay" href="#"></a>
+        
+        
+        <div class="popup__wrapper">
+      
+    
+      
+               <a class="popup_close; button" href="#" onclick='return                           enableScrolling()'     style="text-decoration:none; color:yellow;                 font-size:20px;  background-color: black; border-radius: 90px; 
+                border: 3px solid #00d7c3; padding: 0px 15px; transform:                         translate(0, 1400%); position: center;"   >
+  
+                    Close Page
+  
+               </a>
+     
+                
+                
+                <div class="frame1"><center>Title: The Mabuchi functional
+                <br />
+               
+               </center>
+                </div>
+   
+                <br/>
+   
+  
+               <div class="frame1"><center>
+               Speaker: Shivram</center>
+               </div>
+    
+     
+     
+               <center><div class="frame">
+     
+     
+                     <p > Abstract: The Mabuchi functional is defined on the space of Kähler potentials inside a fixed Kähler cohomology class on a compact complex manifold. Let $(M,\omega)$ be a compact Kähler manifold with a fixed Kähler metric $\omega$. Then any other Kähler metric in the class $\omega\in H^2_{\text{dR}}(M)$ in de Rham cohomology may be related to $\omega$ by a smooth function $\varphi\in C^{\infty}(X)$, the Kähler potential:
+
+$$\omega_\varphi = \omega + i \partial \bar \partial \varphi.$$
+
+In order to ensure this new two-form is a Kähler metric, it must be a positive form:
+
+$\omega_\varphi > 0.$
+
+These two conditions define the space of '''Kähler potentials'''
+
+$$\mathcal{K} = \{ \varphi: M \to \mathbb{R} \mid \varphi\in C^{\infty}(X),\quad \omega + i \partial \bar \partial \varphi > 0\}.$$
+
+Since any two Kähler potentials which differ by a constant function define the same Kähler metric, the space of Kähler metrics in the class $\omega$ can be identified with $\mathcal{K}/\mathbb{R}$, the Kähler potentials modulo the constant functions. One can instead restrict to those Kähler potentials which normalise so that their integral over $M$ vanishes.
+
+
+
+
+    
+              </div></center>
+     
+
+     
+     
+         </div>
+</div>
+        
+        
+        
+        
+        </td>
+        <td>Sibhram</td>
+        <td>At the end of this year</td>
+        <td>adhfjghfkghkrthgrthgrtghrtkghrtkghtrkygrtkyrtkhgjtjkhjtrjkhjtrjkhjtrkyhtjrkjyhtjktyjktjkrtjykrjtyjhkjrtjhrtkhjkhjkjhjkjyhjkjrtjykrtjhkjytkryjkty</td>
+      </tr>
+      
+      
+   
+    
+      
+      
+      
+      
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </tbody>
+  </table>
+</div>
+
+
+
+</center>
+
+
+
+
+
+
+</div>
+
+
+
+<!---Ending of the content section--->
+
+
+
+
+
+
+<style>
+body {
+  
+  
+}
+
+/* Standard Tables */
+
+table {
+table-layout: fixed;
+    
+width:100%;
+  margin:0;
+  border-collapse: collapse;
+  border: 2px solid white;
+  
+}
+
+
+
+
+caption {
+  
+}
+
+th,
+td {
+  padding: .5em 1em .5em 1em;
+  word-break:break-all;
+  
+ 
+  
+  text-align: center;
+}
+
+th {
+  
+  background-color: #000;
+  color: #fff;
+  
+}
+
+tr:nth-child(even) th[scope=row] {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) th[scope=row] {
+  background-color: #fff;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #000;
+  color: #fff;
+  border: solid 2px white;
+}
+
+tr:nth-child(odd) {
+  background-color: #000;
+  color: #fff;
+ 
+}
+
+
+
+td:nth-of-type(2) {
+  font-style: italic;
+}
+
+th:nth-of-type(3),
+td:nth-of-type(3) {
+  text-style: italic;
+}
+
+/* Fixed Headers */
+
+
+
+
+th[scope=row] {
+  vertical-align: top;
+  color: inherit;
+  background-color: inherit;
+  background: linear-gradient(90deg, transparent 0%, transparent calc(100% - .05em), #d6d6d6 calc(100% - .05em), #d6d6d6 100%);
+}
+
+th:not([scope=row]):first-child {
+  left: 0;
+  z-index: 3;
+  background: #000;
+}
+
+/* Scrolling wrapper */
+
+div[tabindex="0"][aria-labelledby][role="region"] {
+  overflow: auto;
+  scroll-snap-type: both mandatory;
+  max-width: 80em;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"]:focus {
+  box-shadow: 0 0 .5em rgba(0,0,0,.5);
+  outline: .1em solid rgba(0,0,0,.1);
+}
+
+div[tabindex="0"][aria-labelledby][role="region"] table {
+  margin: 0;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"].rowheaders {
+  
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 4em 100%, 4em 100%, 1.4em 100%, 1.4em 100%;
+  background-position: 0 0, 100%, 0 0, 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"].colheaders {
+  
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: 100% 4em, 100% 4em, 100% 1.4em, 100% 1.4em;
+  background-attachment: local, local, scroll, scroll;
+}
+
+/* Strictly for making the scrolling happen. */
+
+th[scope=row] {
+  min-width: 40vw;
+
+}
+
+@media all and (min-width: 30em) {
+  th[scope=row] {
+    min-width: 20em;
+  }
+}
+  
+th[scope=row] + td {
+  min-width: 24em;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"]:nth-child(4) {
+  max-height: 24em;
+}
+
+div[tabindex="0"][aria-labelledby][role="region"]:nth-child(8) {
+  max-height: 24em;
+  margin: 0 1em;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+  
+</div>
+
+<style>
+body{
+  
+}
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 96%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #00d7c3;
+    border-right: 5px solid #00d7c3;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+</style>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+<style>
+
+@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+
+body{ font-family: 'Prompt', sans-serif;}
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+  right: 20px;
+  font-family: 'Prompt', sans-serif;
+  
+  
+  
+  
+  text-decoration: none;
+  
+    
+}
+
+
+.button {
+  background-color: transparent;
+  
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: white;
+}
+
+.button:hover {
+  box-shadow: 0 0 0px 0 #fff inset, 0px 0px 15px 15px #fff;
+  
+}
+[id^=modal] {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+[id^=modal]:target {
+    display: block;
+}
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+.popup {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+     
+}
+.popup__overlay {
+    position: fixed;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+   background: #000000b3;
+   
+   
+}
+
+
+
+.popup__wrapper {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+ 
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+    padding: 0;
+    background: #000;
+    background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+  color:white;
+   
+   overflow: auto;
+    
+}
+
+.popup__close {
+    position: absolute;
+    
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+<script>
+function disable(){
+document.body.style.overflow = 'hidden';}
+
+
+function enable(){
+document.body.style.overflow = 'scroll';}
+
+
+
+function disableScrolling() {
+disable();}
+
+
+function enableScrolling() {
+enable();}
+
+
+</script>
+
+ 
+ 
+
+
+</body>
+</html>
