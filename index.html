@@ -615,13 +615,13 @@ body {
  
 }
 
-span1 {
+span2 {
   display: inline-block;
   text-shadow: 0 0 0 whitesmoke;
   animation: smoky 13s 7s infinite;
 }
 
-span1:nth-child(even){
+span2:nth-child(even){
   animation-name: smoky-mirror;
 }
 
@@ -660,6 +660,19 @@ span1:nth-child(even){
   }
 } 
   </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -953,7 +966,7 @@ ht {
 
 <!-- Where to write IISc Bangalore-->
 
-<div class="topleft"><span1>I</span1><span1>I</span1><span1>S</span1><span1>c</span1><span1>&nbsp;</span1><span1>B</span1><span1>a</span1><span1>n</span1><span1>g</span1><span1>a</span1><span1>l</span1><span1>o</span1><span1>r</span1><span1>e</span1> <span1>&nbsp;</span1><span1>$\int_0^1f(x)dx$</span1> </div>
+<div class="topleft">IISc Bangalore  </div>
 
 <style>
 .container {
@@ -972,6 +985,438 @@ ht {
 
 
 </style>
+
+
+<style>
+.container {
+  position: relative;
+}
+
+.position1 {
+  position: absolute;
+  bottom: 25px;
+  right: 90px;
+  font-size: 25px;
+  color: white;
+  
+  
+}
+
+
+</style>
+
+
+<style>
+.container {
+  position: relative;
+}
+
+.position2 {
+  position: absolute;
+  bottom: 25px;
+  left: 90px;
+  font-size: 25px;
+  color: white;
+  
+  
+}
+
+
+</style>
+
+
+
+
+
+
+<div class="position1">
+<spanR>$\int_M$</spanR>
+<spanR>$K$</spanR>
+<spanR>$\mathrm dA$</spanR>
+<spanR>$+$</spanR>
+<spanR>$\int_{\partial M}$</spanR>
+<spanR>$k_g$</spanR>
+<spanR>$\mathrm ds$</spanR>
+<spanR>$=$</spanR>
+<spanR>$2$</spanR>
+<spanR>$\pi$</spanR>
+<spanR>$\chi(M)$</spanR>
+
+</div>
+
+
+
+<div class="position2">
+<span2>$\int_M$</span2>
+<span2>$K$</span2>
+<span2>$\mathrm dA$</span2>
+<span2>$+$</span2>
+<span2>$\int_{\partial M}$</span2>
+<span2>$k_g$</span2>
+<span2>$\mathrm ds$</span2>
+<span2>$=$</span2>
+<span2>$2$</span2>
+<span2>$\pi$</span2>
+<span2>$\chi(M)$</span2>
+
+</div>
+
+
+
+
+
+<!-- This is for smoky animation for position 1--->
+
+<style>
+  
+ @import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+
+body {
+ 
+}
+
+spanR {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  -webkit-animation: smokyR 15s 10s infinite;
+          animation: smokyR 15s 10s infinite;
+}
+
+spanR:nth-child(even) {
+  -webkit-animation-name: smoky-mirrorR;
+          animation-name: smoky-mirrorR;
+}
+
+@-webkit-keyframes smokyR {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(-15rem, -40rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smokyR {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(-15rem, -40rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes smoky-mirrorR {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(-18rem, -40rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+@keyframes smoky-mirrorR {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(-18rem, -40rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+spanR:nth-of-type(1) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+spanR:nth-of-type(2) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+spanR:nth-of-type(3) {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+
+spanR:nth-of-type(4) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+spanR:nth-of-type(5) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+spanR:nth-of-type(6) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+spanR:nth-of-type(7) {
+  -webkit-animation-delay: 3.7s;
+          animation-delay: 3.7s;
+}
+
+spanR:nth-of-type(8) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+spanR:nth-of-type(9) {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
+
+spanR:nth-of-type(10) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+spanR:nth-of-type(11) {
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+}
+
+spanR:nth-of-type(12) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+spanR:nth-of-type(13) {
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+spanR:nth-of-type(14) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+spanR:nth-of-type(15) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+spanR:nth-of-type(16) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+spanR:nth-of-type(17) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+spanR:nth-of-type(18) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+spanR:nth-of-type(19) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+spanR:nth-of-type(20) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+spanR:nth-of-type(21) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
+
+  </style>
+
+
+
+
+
+
+<!-- This is for smoky animation for position 1--->
+
+<style>
+  
+ @import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+
+body {
+ 
+}
+
+span2 {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  -webkit-animation: smoky 15s 10s infinite;
+          animation: smoky 15s 10s infinite;
+}
+
+span2:nth-child(even) {
+  -webkit-animation-name: smoky-mirror;
+          animation-name: smoky-mirror;
+}
+
+@-webkit-keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(15rem, -40rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(15rem, -40rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(18rem, -40rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(18rem, -40rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+span2:nth-of-type(1) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+span2:nth-of-type(2) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+span2:nth-of-type(3) {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+
+span2:nth-of-type(4) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+span2:nth-of-type(5) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+span2:nth-of-type(6) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+span2:nth-of-type(7) {
+  -webkit-animation-delay: 3.7s;
+          animation-delay: 3.7s;
+}
+
+span2:nth-of-type(8) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+span2:nth-of-type(9) {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
+
+span2:nth-of-type(10) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+span2:nth-of-type(11) {
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+}
+
+span2:nth-of-type(12) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+span2:nth-of-type(13) {
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+span2:nth-of-type(14) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+span2:nth-of-type(15) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+span2:nth-of-type(16) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+span2:nth-of-type(17) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+span2:nth-of-type(18) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+span2:nth-of-type(19) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+span2:nth-of-type(20) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+span2:nth-of-type(21) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
+
+  </style>
+
+
 
 
 
@@ -1164,6 +1609,9 @@ document.getElementById("demo2").innerHTML = "$5^\t{th}$ August";
 document.getElementById("demo3").innerHTML = "$8^\t{th}$ August";
 document.getElementById("demo4").innerHTML = "$12^\t{th}$ August";
 </script>
+
+
+
 
 
 
