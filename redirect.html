@@ -1,14 +1,18 @@
 <script>window.addEventListener("resize", getTemplate);
 
-CurrentPage = 'DesktopPage';
+CurrentPage = 'SmallerMobilePage';
 
 function getTemplate() {
-    if (screen.width > 767 && CurrentPage = 'DesktopPage') {
-        return window.location.replace("https://sumantadasgithub.github.io/desktop.html");
+    if (screen.width >= 767 && CurrentPage != 'DesktopPage') {
+        return window.location.replace("https://www.anandabazar.com/");
     }
 
-    if (screen.width < 767 && CurrentPage != 'DesktopPage') {
-        return window.location.replace("https://sumantadasgithub.github.io/mobile3.html");
+    if (screen.width < 767 && CurrentPage != 'MobilePage') {
+        return window.location.replace("https://stackoverflow.com/");
+    }
+
+    if (screen.width <= 480 && CurrentPage != 'SmallerMobilePage') {
+        return window.location.replace("smaller_mobile.html");
     }
 }
 
