@@ -3,7 +3,7 @@
 CurrentPage = 'DesktopPage';
 
 function getTemplate() {
-    if (screen.width >= 767 && CurrentPage != 'DesktopPage') {
+    if (screen.width > 767 && CurrentPage != 'DesktopPage') {
         return window.location.replace("https://sumantadasgithub.github.io/desktop.html");
     }
 
