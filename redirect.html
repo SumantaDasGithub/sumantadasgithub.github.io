@@ -1,19 +1,15 @@
-<script>window.addEventListener("resize", getTemplate);
-
-CurrentPage = 'SmallerMobilePage';
-
-function getTemplate() {
-    if (screen.width >= 767 && CurrentPage != 'DesktopPage') {
-        return window.location.replace("https://www.anandabazar.com/");
-    }
-
-    if (screen.width < 767 && CurrentPage != 'MobilePage') {
-        return window.location.replace("https://stackoverflow.com/");
-    }
-
-    if (screen.width <= 480 && CurrentPage != 'SmallerMobilePage') {
-        return window.location.replace("smaller_mobile.html");
-    }
+<script>// refreshing page automatically when viewport size change  
+window.onresize = function(event) {
+  document.location.reload(true);
 }
 
-getTemplate();</script>
+var href = window.location.href.split("/")
+var html_location = href[href.length-1]
+
+if (window.innerWidth >= 960 && html_location !== "index.html") {
+    window.location = "https://stackoverflow.com/";
+}
+
+if (window.innerWidth < 960 && html_location !== "index2.html") {
+    window.location = "https://www.anandabazar.com/";
+}</script>
