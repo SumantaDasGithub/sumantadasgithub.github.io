@@ -1,0 +1,15 @@
+<script>window.addEventListener("resize", getTemplate);
+
+CurrentPage = 'DesktopPage';
+
+function getTemplate() {
+    if (screen.width >= 767 && CurrentPage != 'DesktopPage') {
+        return window.location.replace("https://sumantadasgithub.github.io/desktop.html");
+    }
+
+    if (screen.width < 767 && CurrentPage != 'MobilePage') {
+        return window.location.replace("https://sumantadasgithub.github.io/mobile3.html");
+    }
+}
+
+getTemplate();</script>
