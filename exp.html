@@ -1,0 +1,482 @@
+<style>
+@media (max-width: 575.98px) {
+  .HideOnMobile {
+    display: none;
+  }
+  .ShowOnMobile {
+    display: initial;
+  }
+}
+
+@media (min-width: 576px) {
+  .HideOnMobile {
+    display: initial;
+  }
+  .ShowOnMobile {
+    display: none;
+  }
+}
+
+</style>
+
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  
+}
+nav{
+  background: black;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+  transform: skewX(25deg);
+}
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 0;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: black;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+<style>/* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main level */
+.menu {	
+
+transform:  translateX( 53px);
+	
+  
+  	width: 800px;
+  
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+.menu > li {
+  background: -webkit-linear-gradient(#fff, #000);
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+  display: inline-block;
+    margin-right:10px;
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}		
+
+.menu li:hover {
+  background: black;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: rgba(255,255,255,.5);
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+</style>
+
+
+
+
+<style>@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+
+</style>
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+
+
+
+
+
+
+
+
+<div class="ShowOnMobile">
+ <nav style="transform:translate(0%,0%); width: 100%;">
+<div class="logo" style="font-size: 55px;
+  color: white;
+  font-family: 'Brush Script MT', cursive, monospace">
+IISc Bangalore  </div>
+<label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+<li><label for="btn-3" class="show">Recent Talks +</label><a href="#">Recent Talks</a><input type="checkbox" id="btn-3">
+          <ul>
+              <li><a href="#">$1^\text{st}$ Aug</a></li>
+              <li><a href="#">$5^\text{th}$ Aug</a></li>
+              <li><a href="#">$8^\text{th}$ Aug</a></li>
+			  <li><a href="#">$12^\text{th}$ Aug</a></li>
+             </ul>
+
+</li>
+
+
+
+
+<li>
+          <label for="btn-1" class="show">Old Talks +</label>
+          <a href="#">Old Talks</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+<li><a href="https://sumantadasgithub.github.io/indexTopo.html">Topology</a></li>
+<li><a href="https://sumantadasgithub.github.io/indexGeo.html">Geometry</a></li>
+</ul>
+</li>
+
+
+
+
+<li>
+          <label for="btn-2" class="show">About +</label>
+          <a href="#">About</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+<li><a href="#">Seminar</a></li>
+<li><a href="#">Website</a></li>
+
+</ul>
+</li>
+
+<li><a href="#">Contact</a></li>
+</ul>
+                </div>
+            </div>
+			
+			 
+        </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="HideOnMobile">
+  <ul class="menu cf" >
+                        <li class="nav-item"><a class="nav-link" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;">Recent Talks</a>
+						
+						      <ul class="submenu">
+                                 <li><a id="demo1" href="" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a></li>
+                                 <li><a id="demo2" href="" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a></li>
+								 <li><a id="demo3" href="" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a></li>
+								 <li><a id="demo4" href="" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a></li>
+                            </ul>
+						
+						</li>
+                        
+						
+						<li class="nav-item"><a class="nav-link" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;">Old Talks</a>  
+						
+						
+						<ul class="submenu">
+                         <li><a id="demoT" href="https://sumantadasgithub.github.io/indexTopo.html" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a> </li>
+                         <li><a id="demoG" href="https://sumantadasgithub.github.io/indexGeo.html" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a></li>
+                        </ul>	        
+	
+	
+	                   </li>
+                        
+						<li class="nav-item"><a class="nav-link" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;">About</a>
+						    <ul class="submenu">
+                                <li><a id="demoSTGS" href="" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a> </li>
+                                 <li><a id="demoWEBSITE" href="" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;"></a></li>
+                            </ul>
+						</li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="#contact" style="font-size:17px; padding: 15px 10px; font-family: 'Poppins', sans-serif;">Contact</a></li>
+                    </ul>
+
+</div>
