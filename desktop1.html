@@ -397,7 +397,11 @@ nav ul ul ul li{
 
 body,
 html {
-background:black;	
+background-image: url('background1.svg');
+background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container*/
+	
 }
 
 body {
@@ -1640,11 +1644,10 @@ document.getElementById("demo1").innerHTML = "$12^{th}$ Aug";
     <style>
         #drag {
             background-color: transparent;
-            height: auto;
+            height: 120px;
             width: 520px;
            align:center;
             position: left;
-			touch-action: none;
         }
     </style>
 	
@@ -1660,37 +1663,3 @@ document.getElementById("demo1").innerHTML = "$12^{th}$ Aug";
      })
   </script>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<script>function touchHandler(event) {
-    var touch = event.changedTouches[0];
-
-    var simulatedEvent = document.createEvent("MouseEvent");
-        simulatedEvent.initMouseEvent({
-        touchstart: "mousedown",
-        touchmove: "mousemove",
-        touchend: "mouseup"
-    }[event.type], true, true, window, 1,
-        touch.screenX, touch.screenY,
-        touch.clientX, touch.clientY, false,
-        false, false, false, 0, null);
-
-    touch.target.dispatchEvent(simulatedEvent);
-    event.preventDefault();
-}
-
-function init() {
-    document.addEventListener("touchstart", touchHandler, true);
-    document.addEventListener("touchmove", touchHandler, true);
-    document.addEventListener("touchend", touchHandler, true);
-    document.addEventListener("touchcancel", touchHandler, true);
-}</script>
