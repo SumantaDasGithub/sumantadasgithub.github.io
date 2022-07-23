@@ -1,0 +1,613 @@
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+
+
+
+<!--- button animation--->
+
+<style>
+a.button1 {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+border: 2px solid white;
+  right: 20px;
+  font-family: 'Prompt', sans-serif;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 0;
+  font-size: 22px;
+  
+  text-decoration: none;
+  
+    
+}
+
+
+.button1 {
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+}
+
+.button1:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+</style>
+
+<!--- button animation--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    div.scrollable
+{
+width:100%;
+
+height: auto;
+margin-bottom: 0;
+padding-top: 0;
+overflow-y: auto;
+
+}
+
+div.scrollable1
+{
+width:100%;
+height: 50px;
+margin: 0;
+padding: 0;
+overflow-y: scroll;
+
+}
+div.scrollable2
+{
+width:100%;
+height: 50px;
+margin: 0;
+padding: 0;
+overflow-y: scroll;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+</style>
+
+
+
+
+<style>
+
+@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+
+
+body {
+font-size: 20px;
+
+
+ background: black;
+ background-image: url('background3.svg');
+  top: 0;
+  left: 0;
+  position: center;
+  height: 100%;
+  
+  padding: 0px 30px 30px 30px;
+  
+  
+  font-family: 'Prompt', sans-serif;
+  overflow auto;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 20px;
+  
+  
+ display:none;
+  
+}
+
+
+
+
+
+
+
+
+.header {
+  background: #000;
+
+
+
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+ height: auto;
+  width: 100%;
+ 
+  padding: 0;
+  
+  color:white;
+}
+
+
+
+.footer {
+  background: #000;
+
+
+
+  position: sticky;
+ bottom: 0;
+  right: 0;
+  left: 0;
+ height: auto;
+  width: 100%;
+ 
+  padding: 0;
+  
+  color:white;
+}
+
+
+</style>
+
+
+
+<!---Style for tables--->
+
+<style>
+body {
+  
+  
+}
+
+/* Standard Tables */
+
+table {
+table-layout: fixed;
+    
+width:100%;
+  margin:0;
+  border-collapse: collapse;
+  border: 2px solid black;
+ position: center;
+}
+
+
+
+
+th,
+td,
+tr {
+  padding: .5em 1em .5em 1em;
+  word-break:break-all;
+  
+ border: solid .01px black;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+</style>
+
+<!---Style for tables--->
+
+
+
+
+
+<style>#scrollable11 {
+    border: 2px solid blue;
+    padding: 0;
+    position: absolute;
+    top: 4%;
+    right:0;
+    bottom: 0;
+    left: 5%;
+    overflow: auto;
+	width:90%;
+	height:32%;
+	
+}
+
+#scrollable00 {
+    border: 2px solid green;
+    padding: 0px;
+    position: absolute;
+    top: 33%;
+    right: 0;
+    bottom: 0;
+    left: 2.5%;
+    overflow: auto;
+	width:90%;
+	height:8%;
+	
+	
+}
+#scrollable12 {
+    border: 2px solid yellow;
+    padding: 0px;
+    position: absolute;
+    top: 38%;
+    right: 0px;
+    bottom: 0px;
+    left: 10%;
+   
+	width:85%;
+	height:39.5%;
+	overflow-y: auto;
+	 overflow-x: hidden;
+}
+
+#scrollable121 {
+    border: 2px solid white;
+    padding: 0px;
+    position: absolute;
+    top: 55%;
+    right: 0px;
+    bottom: 0px;
+    left: -3%;
+   color: white;
+	width:18%;
+	height:7%;
+	overflow-y: auto;
+	 overflow-x: hidden;
+	 
+}
+
+#scrollable13 {
+    border: 2px solid red;
+    padding: 0;
+    position: absolute;
+    top: 79%;
+    right: 0px;
+    bottom: 0px;
+    left: 5%;
+    overflow-y: auto;
+	 overflow-x: hidden;
+	width:90%;
+	height:25%;
+	
+}
+</style>
+
+
+
+
+
+
+<style>
+#myBtn {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+border: 2px solid white;
+  right: 20px;
+  font-family: 'Prompt', sans-serif;
+  background: white;
+  color: yellow;
+  padding: 10px 20px;
+  border-radius: 120%;
+  font-size: 22px;
+  box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+
+    
+}
+
+
+#myBtn {
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: yellow;
+}
+
+#myBtn:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+
+
+
+
+
+
+
+#myBtn1 {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+border: 2px solid white;
+  right: 20px;
+  font-family: 'Prompt', sans-serif;
+  background: white;
+  color: yellow;
+  padding: 10px 20px;
+  border-radius: 120%;
+  font-size: 22px;
+  box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+
+    
+}
+
+
+#myBtn1 {
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: yellow;
+}
+
+#myBtn1:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+
+
+
+
+</style>
+
+<!---homepage button animation--->
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#more {display: none;}
+</style>
+
+
+
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Open Abstract"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Close Abstract"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Open Abstract"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Close Abstract"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<div style="transform:translate(0%,0%)" >
+
+
+
+
+
+
+<table class="fixed" >
+   
+<tr style="border-top: 2px solid white; "><td style="color:yellow;  padding: 20px 20px 20px 20px;" colspan="3">$26^\text{th}$ Talk Of STGS Geometry Module
+		</td>
+        
+         </tr> </table>
+   <table class="fixed" >
+	
+	<tr style="border-top: 2px solid white; "><td style="width:95px; color:yellow;  padding: 20px 20px 20px 20px;">Title
+		</td>
+        
+        <td style="text-align:left;border-left: 2px solid white; padding: 20px 20px 20px 20px; font-family: 'EB Garamond', serif;line-height:150%; font-size: 25px"colspan="2"><I>
+
+              The integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the planeTheThe integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane kferfeerfgeyegkgkekghkghjkhgrjkghjkrghjkghrjkhgrjkhrgkjhrkghrkghrtkgh </I></td>
+			  
+    </tr> 
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="fixed">
+		
+      <tr  >
+        <td style="width:30%; text-align:center; border-left: 2px solid white; color: yellow; border-top: 2px solid white;">Speaker  </td>    <td style="width:35%; color: yellow;">Date </td>    <td style="width:35%;border-left: 2px solid white; color: yellow;border-top: 2px solid white;">Time </td>
+	  </tr>
+    
+      <tr><td style="text-align:center; border-right: 2px solid white;   font-family: 'EB Garamond', serif; overflow:auto; line-height:150%; font-size: 25px" >Gobinda Sau</td><td style="text-align:center;    font-family: 'EB Garamond', serif; overflow:auto;border-bottom: 2px solid white;line-height:150%; font-size: 25px "> 1st August, 2022 (Friday) </td><td style="text-align:center;    font-family: 'EB Garamond', serif; overflow:auto;line-height:150%; font-size: 25px">9:30pm- 11:00pm</td></tr>
+	  
+	  
+	  </table>
+	  
+	  
+	  
+	  
+	  
+	  
+<table class="fixed" >
+   
+
+   
+	
+	<tr style="border-bottom: 2px solid white; "><td style="width:95px; color:yellow;  padding: 20px 20px 20px 20px;">Keywords
+		</td>
+        
+        <td style="text-align:left;border-left: 2px solid white; padding: 20px 20px 20px 20px; font-family: 'EB Garamond', serif;line-height:150%; font-size: 25px"colspan="2"><I>
+
+              The integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane </I></td>
+			  
+    </tr> 
+
+
+
+</table>
+	  
+
+
+
+
+
+                         <span id="dots"></span>
+
+
+<span id="more">
+
+
+<table class="fixed">  
+		<tr><td></td><td><button onclick="myFunction()" id="myBtn">Close Abstract</button></td><td></td></tr>
+      
+	  
+	  <tr><td colspan="3" style="font-family: 'EB Garamond', serif; line-height:150%; font-size: 25px"> $\oint\limits_\Gamma f(z)\ \mathrm dz$ In mathematics, an integral assigns numbers to functions in a way that describes displacement, area, volume, and other concepts that arise by combining infinitesimal data. The process of finding integrals is called integration. Along with differentiation, integration is a fundamental, essential operation of calculus,[a] and serves as a tool to solve problems in mathematics and physics involving the area of an arbitrary shape, the length of a curve, and the volume of a solid, among others.
+
+The integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane that is bounded by the graph of a given function between two points in the real line. Conventionally, areas above the horizontal axis of the plane are positive while areas below are negative. Integrals also refer to the concept of an antiderivative, a function whose derivative is the given function. In this case, they are called indefinite integrals. The fundamental theorem of calculus relates definite integrals with differentiation and provides a method to compute the definite integral of a function when its antiderivative is known.
+
+Although methods of calculating areas and volumes dated from ancient Greek mathematics, the principles of integration were formulated independently by Isaac Newton and Gottfried Wilhelm Leibniz in the late 17th century, who thought of the area under a curve as an infinite sum of rectangles of infinitesimal width. Bernhard Riemann later gave a rigorous definition of integrals, which is based on a limiting procedure that approximates the area of a curvilinear region by breaking the region into infinitesimally thin vertical slabs. In the early 20th century, Henri Lebesgue generalized Riemann's formulation by introducing what is now referred to as the Lebesgue integral; it is more robust than Riemann's in the sense that a wider class of functions are Lebesgue-integrable.
+
+Integrals may be generalized depending on the type of the function as well as the domain over which the integration is performed. For example, a line integral is defined for functions of two or more variables, and the interval of integration is replaced by a curve connecting the two endpoints of the interval. In a surface integral, the curve is replaced by a piece of a surface in three-dimensional space.
+$\oint\limits_\Gamma f(z)\ \mathrm dz$ In mathematics, an integral assigns numbers to functions in a way that describes displacement, area, volume, and other concepts that arise by combining infinitesimal data. The process of finding integrals is called integration. Along with differentiation, integration is a fundamental, essential operation of calculus,[a] and serves as a tool to solve problems in mathematics and physics involving the area of an arbitrary shape, the length of a curve, and the volume of a solid, among others.
+
+The integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane that is bounded by the graph of a given function between two points in the real line. Conventionally, areas above the horizontal axis of the plane are positive while areas below are negative. Integrals also refer to the concept of an antiderivative, a function whose derivative is the given function. In this case, they are called indefinite integrals. The fundamental theorem of calculus relates definite integrals with differentiation and provides a method to compute the definite integral of a function when its antiderivative is known.
+
+Although methods of calculating areas and volumes dated from ancient Greek mathematics, the principles of integration were formulated independently by Isaac Newton and Gottfried Wilhelm Leibniz in the late 17th century, who thought of the area under a curve as an infinite sum of rectangles of infinitesimal width. Bernhard Riemann later gave a rigorous definition of integrals, which is based on a limiting procedure that approximates the area of a curvilinear region by breaking the region into infinitesimally thin vertical slabs. In the early 20th century, Henri Lebesgue generalized Riemann's formulation by introducing what is now referred to as the Lebesgue integral; it is more robust than Riemann's in the sense that a wider class of functions are Lebesgue-integrable.
+
+Integrals may be generalized depending on the type of the function as well as the domain over which the integration is performed. For example, a line integral is defined for functions of two or more variables, and the interval of integration is replaced by a curve connecting the two endpoints of the interval. In a surface integral, the curve is replaced by a piece of a surface in three-dimensional space.
+
+
+<br/> integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane that is bounded by the graph of a given function between two points in the real line. Conventionally, areas above the horizontal axis of the plane are positive while areas below are negative. Integrals also refer to the concept of an antiderivative, a function whose derivative is the given function. In this case, they are called indefinite integrals. The fundamental theorem of calculus relates definite integrals with differentiation and provides a method to compute the definite integral of a function when its antiderivative is known.
+
+Although methods of calculating areas and volumes dated from ancient Greek mathematics, the principles of integration were formulated independently by Isaac Newton and Gottfried Wilhelm Leibniz in the late 17th century, who thought of the area under a curve as an infinite sum of rectangles of infinitesimal width. Bernhard Riemann later gave a rigorous definition of integrals, which is based on a limiting procedure that approximates the area of a curvilinear region by breaking the region into infinitesimally thin vertical slabs. In the early 20th century, Henri Lebesgue generalized Riemann's formulation by introducing what is now referred to as the Lebesgue integral; it is more robust than Riemann's in the sense that a wider class of functions are Lebesgue-integrable.
+
+Integrals may be generalized depending on the type of the function as well as the domain over which the integration is performed. For example, a line integral is defined for functions of two or more variables, and the interval of integration is replaced by a curve connecting the two endpoints of the interval. In a surface integral, the curve is replaced by a piece of a surface in three-dimensional space.
+$\oint\limits_\Gamma f(z)\ \mathrm dz$ In mathematics, an integral assigns numbers to functions in a way that describes displacement, area, volume, and other concepts that arise by combining infinitesimal data. The process of finding integrals is called integration. Along with differentiation, integration is a fundamental, essential operation of calculus,[a] and serves as a tool to solve problems in mathematics and physics involving the area of an arbitrary shape, the length of a curve, and the volume of a solid, among others.
+
+The integrals enumerated here are those termed definite integrals, which can be interpreted as the signed area of the region in the plane that is bounded by the graph of a given function between two points in the real line. Conventionally, areas above the horizontal axis of the plane are positive while areas below are negative. Integrals also refer to the concept of an antiderivative, a function whose derivative is the given function. In this case, they are called indefinite integrals. The fundamental theorem of calculus relates definite integrals with differentiation and provides a method to compute the definite integral of a function when its antiderivative is known.
+
+Although methods of calculating areas and volumes dated from ancient Greek mathematics, the principles of integration were formulated independently by Isaac Newton and Gottfried Wilhelm Leibniz in the late 17th century, who thought of the area under a curve as an infinite sum of rectangles of infinitesimal width. Bernhard Riemann later gave a rigorous definition of integrals, which is based on a limiting procedure that approximates the area of a curvilinear region by breaking the region into infinitesimally thin vertical slabs. In the early 20th century, Henri Lebesgue generalized Riemann's formulation by introducing what is now referred to as the Lebesgue integral; it is more robust than Riemann's in the sense that a wider class of functions are Lebesgue-integrable.
+
+Integrals may be generalized depending on the type of the function as well as
+	  
+	  </td></tr>
+	  
+ 
+	  
+	  </table> </span>
+	  
+	 <table class="fixed"> <tr style="border-bottom: 2px solid white; "><td></td><td style="padding: 20px 20px 20px 20px;"><button onclick="myFunction()" id="myBtn1">Open Abstract</button></td><td></td></tr> </table>
+
+
+<table class="fixed">
+
+<tr style="border-top: 0px solid white; " ><td>&nbsp</td><td style="border-bottom: 0px solid white; ">&nbsp</td><td>&nbsp</td></tr>
+
+ <tr >
+ 
+ <td>  <a href="https://sumantadasgithub.github.io/"                      class="button1">Previous Talk</a></td>
+ 
+ 
+ <td><a href="https://sumantadasgithub.github.io/desktop1.html"                      class="button1"> Geometry Module</td>
+ 
+ <td><a href="https://sumantadasgithub.github.io/desktop.html"                      class="button1"> Next Talk</td>
+ 
+ </tr> 
+ 
+ </table>
+
+
+
+
+
+
+	  
+
+
+
+
+
+
+
+
+
+
+	  
